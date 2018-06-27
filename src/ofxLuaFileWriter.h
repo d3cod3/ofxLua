@@ -15,6 +15,8 @@
 #include "ofLog.h"
 #include "ofConstants.h"
 
+#include "ofMain.h"
+
 /// writes variables out to a lua text file
 ///
 /// this is a not a scripting replacement, but a quick way to store data
