@@ -11,6 +11,6 @@ WD=$(dirname $0)
 
 cd $WD/../swig
 
-make desktop NAME=ofxLuaBindings ATTRIBUTES=false $@
-make ios NAME=ofxLuaBindings ATTRIBUTES=false $@
-make linuxarm NAME=ofxLuaBindings ATTRIBUTES=false $@
+make desktop ATTRIBUTES=false $@
+make ios ATTRIBUTES=false $@
+make linuxarm ATTRIBUTES=false $@
