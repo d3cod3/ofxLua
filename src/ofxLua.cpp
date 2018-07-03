@@ -31,6 +31,7 @@
 // declare the wrapped modules
 extern "C" {
 	int luaopen_of(lua_State* L);
+    int luaopen_ofx(lua_State* L);
 }
 
 // local pointer for static functions
@@ -66,6 +67,7 @@ bool ofxLua::init(bool abortOnError, bool openLibs, bool ofBindings) {
 	}
 	if(ofBindings) {
 		luaopen_of(L);
+        luaopen_ofx(L);
 	}
 	
 	// clear stack since opening libs leaves tables on the stack
