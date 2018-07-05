@@ -11,6 +11,6 @@ WD=$(dirname $0)
 
 cd $WD/../swig
 
-make desktop ATTRIBUTES=false $@
 make ios ATTRIBUTES=false $@
 make linuxarm ATTRIBUTES=false $@
+make desktop ATTRIBUTES=false $@
